@@ -25,4 +25,12 @@ class Board
   def cells
     @cells
   end
+
+  def valid_placement?(ship, coords)
+    if ship.length != coords.length
+      false
+    else
+      true
+    end
+  end
 end
