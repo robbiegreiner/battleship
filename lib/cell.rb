@@ -33,9 +33,9 @@ class Cell
       "S"
     elsif @fired_upon && !@ship
       "M"
-    elsif @fired_upon && @ship
+    elsif @fired_upon && @ship && !ship.sunk?
       "H"
-    elsif @fire_upon && @ship.sunk?
+    elsif @fired_upon && @ship.sunk?
       "X"
     else
       "."
